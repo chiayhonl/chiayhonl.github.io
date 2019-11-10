@@ -68,15 +68,15 @@
   };
 </script>
 
-  <meta name="description" content="trying to write a line of text……">
-<meta name="keywords" content="test">
+  <meta name="description" content="前言   搭博客需要一个理由.关于为什么要自己搭建一个博客,我想是在看到别人清晰有条理的布局与归类后,为了改善自己归纳整理的能力,于是决定自己搭一个(其实更多是冲着看板娘去的).捣鼓了一个下午之后,终于搞清楚一点门路.就以此记录一点心得吧">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my-first-blog">
+<meta property="og:title" content="Hexo框架(一):个人博客的搭建">
 <meta property="og:url" content="http:&#x2F;&#x2F;chiayhonl.top&#x2F;2019&#x2F;11&#x2F;10&#x2F;my-first-blog&#x2F;index.html">
 <meta property="og:site_name" content="MyBlog">
-<meta property="og:description" content="trying to write a line of text……">
+<meta property="og:description" content="前言   搭博客需要一个理由.关于为什么要自己搭建一个博客,我想是在看到别人清晰有条理的布局与归类后,为了改善自己归纳整理的能力,于是决定自己搭一个(其实更多是冲着看板娘去的).捣鼓了一个下午之后,终于搞清楚一点门路.就以此记录一点心得吧">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-10T10:01:00.692Z">
+<meta property="og:updated_time" content="2019-11-10T12:43:53.499Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://chiayhonl.top/2019/11/10/my-first-blog/">
@@ -93,7 +93,7 @@
   };
 </script>
 
-  <title>my-first-blog | MyBlog</title>
+  <title>Hexo框架(一):个人博客的搭建 | MyBlog</title>
   
 
 
@@ -215,7 +215,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          my-first-blog
+          Hexo框架(一):个人博客的搭建
         </h1>
 
         <div class="post-meta">
@@ -226,7 +226,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-10 14:15:39 / 修改时间：18:01:00" itemprop="dateCreated datePublished" datetime="2019-11-10T14:15:39+08:00">2019-11-10</time>
+              <time title="创建时间：2019-11-10 20:00:00 / 修改时间：20:43:53" itemprop="dateCreated datePublished" datetime="2019-11-10T20:00:00+08:00">2019-11-10</time>
             </span>
 
           
@@ -247,7 +247,39 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>trying to write a line of text……</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>   搭博客需要一个理由.关于为什么要自己搭建一个博客,我想是在看到别人清晰有条理的布局与归类后,为了改善自己归纳整理的能力,于是决定自己搭一个<br>(其实更多是冲着看板娘去的).捣鼓了一个下午之后,终于搞清楚一点门路.就以此记录一点心得吧</p>
+<a id="more"></a>
+
+<h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>   搭建个人博客=域名(外网可访问的地址)+外网服务器(外网存储文件图片的地方)+解析(本地与服务器做映射)</p>
+<p>   搭建流程大概分为:</p>
+<ol>
+<li><p>下载<a href="https://www.git-scm.com/download/" target="_blank" rel="noopener">git</a>,下载<a href="https://nodejs.org/en/download/current/" target="_blank" rel="noopener">node.js</a>,搭建<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo</a></p>
+</li>
+<li><p><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>注册与部署</p>
+</li>
+<li><p>域名购买</p>
+</li>
+<li><p>域名解析</p>
+</li>
+</ol>
+<h4 id="环境的下载与安装"><a href="#环境的下载与安装" class="headerlink" title="环境的下载与安装"></a>环境的下载与安装</h4><p>   下载并安装git：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a> </p>
+<p>   下载并安装node.js ；<a href="https://nodejs.org/en/download/current/" target="_blank" rel="noopener">https://nodejs.org/en/download/current/</a></p>
+<p>   当上面两个都下载安装完毕后,搭建Hexo框架</p>
+<p>   ①先在本地磁盘中建立一个Hexo文件夹用于存储本地文件</p>
+<p>   ②进入文件右键点击空白处，选中Git Bash Here，依次输入以下命令：</p>
+<pre><code>a. 安装Hexo：npm install -g hexo-cli
+
+b. 初始化Hexo: hexo init
+
+c. 启动Hexo服务: npm install --&gt;hexo server --&gt;hexo clean --&gt;hexo generate --&gt;hexo deploy</code></pre><h4 id="服务器的部署"><a href="#服务器的部署" class="headerlink" title="服务器的部署"></a>服务器的部署</h4><p>   注册/登录github：<a href="https://github.com/，然后新建一个仓库(借用github服务器)。仓库名字为用户名" target="_blank" rel="noopener">https://github.com/，然后新建一个仓库(借用github服务器)。仓库名字为用户名</a> + .github.io。</p>
+<p>   将Hexo文件夹上传至仓库中。</p>
+<h4 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h4><p>   去阿里云购买一个域名<a href="http://www.aliyun.com" target="_blank" rel="noopener">www.aliyun.com</a></p>
+<h4 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h4><p>   购买成功进行备案后。在阿里云的管理控制台进行域名解析</p>
+<p>参考资料：</p>
+<p><a href="https://blog.csdn.net/AinUser/article/details/77609180" target="_blank" rel="noopener">https://blog.csdn.net/AinUser/article/details/77609180</a></p>
+<p><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a></p>
+<p><a href="http://blog.haoji.me/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">http://blog.haoji.me/build-blog-website-by-hexo-github.html</a>    </p>
+
     </div>
 
     
@@ -256,7 +288,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/test/" rel="tag"># test</a>
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           </div>
 
         
@@ -309,6 +341,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建流程"><span class="nav-number">2.</span> <span class="nav-text">搭建流程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#环境的下载与安装"><span class="nav-number">2.0.1.</span> <span class="nav-text">环境的下载与安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#服务器的部署"><span class="nav-number">2.0.2.</span> <span class="nav-text">服务器的部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#购买域名"><span class="nav-number">2.0.3.</span> <span class="nav-text">购买域名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#域名解析"><span class="nav-number">2.0.4.</span> <span class="nav-text">域名解析</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

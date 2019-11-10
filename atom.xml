@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chiayhonl.top/"/>
-  <updated>2019-11-10T10:01:00.692Z</updated>
+  <updated>2019-11-10T12:43:53.499Z</updated>
   <id>http://chiayhonl.top/</id>
   
   <author>
@@ -17,26 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>my-first-blog</title>
+    <title>Hexo框架(一):个人博客的搭建</title>
     <link href="http://chiayhonl.top/2019/11/10/my-first-blog/"/>
     <id>http://chiayhonl.top/2019/11/10/my-first-blog/</id>
-    <published>2019-11-10T06:15:39.000Z</published>
-    <updated>2019-11-10T10:01:00.692Z</updated>
+    <published>2019-11-10T12:00:00.000Z</published>
+    <updated>2019-11-10T12:43:53.499Z</updated>
     
-    <content type="html"><![CDATA[<p>trying to write a line of text……</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>   搭博客需要一个理由.关于为什么要自己搭建一个博客,我想是在看到别人清晰有条理的布局与归类后,为了改善自己归纳整理的能力,于是决定自己搭一个<br>(其实更多是冲着看板娘去的).捣鼓了一个下午之后,终于搞清楚一点门路.就以此记录一点心得吧</p><a id="more"></a><h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>   搭建个人博客=域名(外网可访问的地址)+外网服务器(外网存储文件图片的地方)+解析(本地与服务器做映射)</p><p>   搭建流程大概分为:</p><ol><li><p>下载<a href="https://www.git-scm.com/download/" target="_blank" rel="noopener">git</a>,下载<a href="https://nodejs.org/en/download/current/" target="_blank" rel="noopener">node.js</a>,搭建<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo</a></p></li><li><p><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>注册与部署</p></li><li><p>域名购买</p></li><li><p>域名解析</p></li></ol><h4 id="环境的下载与安装"><a href="#环境的下载与安装" class="headerlink" title="环境的下载与安装"></a>环境的下载与安装</h4><p>   下载并安装git：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a> </p><p>   下载并安装node.js ；<a href="https://nodejs.org/en/download/current/" target="_blank" rel="noopener">https://nodejs.org/en/download/current/</a></p><p>   当上面两个都下载安装完毕后,搭建Hexo框架</p><p>   ①先在本地磁盘中建立一个Hexo文件夹用于存储本地文件</p><p>   ②进入文件右键点击空白处，选中Git Bash Here，依次输入以下命令：</p><pre><code>a. 安装Hexo：npm install -g hexo-clib. 初始化Hexo: hexo initc. 启动Hexo服务: npm install --&gt;hexo server --&gt;hexo clean --&gt;hexo generate --&gt;hexo deploy</code></pre><h4 id="服务器的部署"><a href="#服务器的部署" class="headerlink" title="服务器的部署"></a>服务器的部署</h4><p>   注册/登录github：<a href="https://github.com/，然后新建一个仓库(借用github服务器)。仓库名字为用户名" target="_blank" rel="noopener">https://github.com/，然后新建一个仓库(借用github服务器)。仓库名字为用户名</a> + .github.io。</p><p>   将Hexo文件夹上传至仓库中。</p><h4 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h4><p>   去阿里云购买一个域名<a href="http://www.aliyun.com" target="_blank" rel="noopener">www.aliyun.com</a></p><h4 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h4><p>   购买成功进行备案后。在阿里云的管理控制台进行域名解析</p><p>参考资料：</p><p><a href="https://blog.csdn.net/AinUser/article/details/77609180" target="_blank" rel="noopener">https://blog.csdn.net/AinUser/article/details/77609180</a></p><p><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a></p><p><a href="http://blog.haoji.me/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">http://blog.haoji.me/build-blog-website-by-hexo-github.html</a>    </p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;trying to write a line of text……&lt;/p&gt;
-      
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;   搭博客需要一个理由.关于为什么要自己搭建一个博客,我想是在看到别人清晰有条理的布局与归类后,为了改善自己归纳整理的能力,于是决定自己搭一个&lt;br&gt;(其实更多是冲着看板娘去的).捣鼓了一个下午之后,终于搞清楚一点门路.就以此记录一点心得吧&lt;/p&gt;
     
     </summary>
     
     
     
-      <category term="test" scheme="http://chiayhonl.top/tags/test/"/>
+      <category term="Hexo" scheme="http://chiayhonl.top/tags/Hexo/"/>
     
   </entry>
   
@@ -44,8 +41,8 @@
     <title>Hello World</title>
     <link href="http://chiayhonl.top/2019/11/10/hello-world/"/>
     <id>http://chiayhonl.top/2019/11/10/hello-world/</id>
-    <published>2019-11-10T05:57:02.374Z</published>
-    <updated>2019-11-10T05:57:02.374Z</updated>
+    <published>2019-11-10T11:42:01.367Z</published>
+    <updated>2019-11-10T11:42:01.371Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
