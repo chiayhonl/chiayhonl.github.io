@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chiayhonl.top/"/>
-  <updated>2019-11-11T05:00:54.047Z</updated>
+  <updated>2019-11-11T11:23:14.892Z</updated>
   <id>http://chiayhonl.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo框架(二)：博客主题的美化</title>
+    <link href="http://chiayhonl.top/2019/11/11/Hexo-Config/"/>
+    <id>http://chiayhonl.top/2019/11/11/Hexo-Config/</id>
+    <published>2019-11-11T10:29:08.000Z</published>
+    <updated>2019-11-11T11:23:14.892Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong><em>前言</em></strong></h2><p>在我们搭建好自己的博客后，如果你不急的话第一件事并不是开始写博客，而是对博客的外形进行包装和美化。这里主要介绍博客主题的选择与美化。</p><a id="more"></a><br><h2 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a><strong><em>主题选择</em></strong></h2><p>Hexo默认的主题是landscape，这里只推荐我用过的主题：</p><ul><li><p><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">Next</a></p></li><li><p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">Yilia</a></p></li><li><p><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">matery</a></p></li></ul><p>如果不满意可以自行去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Themes</a>商店选择，这里仅针对本博客用的Next主题进行配置。不同的主题大体配置相同，根据官方文档指引即可自行配置。</p>   <br><h2 id="主题下载"><a href="#主题下载" class="headerlink" title="主题下载"></a><strong><em>主题下载</em></strong></h2><ol><li><p>下载主题</p><p>进入你的博客文件夹(Hexo),打开Git Bash输入以下命令，等待下载完成。</p><p>git clone <a href="https://github.com/theme-next/hexo-theme-next.git" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next.git</a> themes/next</p></li><li><p>配置主题</p><p>下载完成后，在themes目录下会有next文件夹，这就是我们要的next主题。然后在主目录下找到站点配置文件_config.yml 中的theme字段，更改为主题文件夹的名称：</p><p> theme: landscape –&gt; theme: next</p></li></ol><br><h2 id="主题优化"><a href="#主题优化" class="headerlink" title="主题优化"></a><strong><em>主题优化</em></strong></h2><p>   主题一般都有比较详细的说明文档，若想自行配置的也可参考<a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">next官方文档</a>。</p><p>   这里大致进行一些简单的美化：</p><ul><li><p>配置博客基本信息</p></li><li><p>设置主题语言</p></li><li><p>设置动态背景</p></li><li><p>上传头像,并设置头像旋转效果</p></li><li><p>设置个人社交图标链接</p></li><li><p>设置RSS</p></li><li><p>设置看板娘</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;前言&lt;/em&gt;&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;在我们搭建好自己的博客后，如果你不急的话第一件事并不是开始写博客，而是对博客的外形进行包装和美化。这里主要介绍博客主题的选择与美化。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Hexo" scheme="http://chiayhonl.top/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo框架(一):个人博客的搭建</title>
