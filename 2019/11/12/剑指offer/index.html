@@ -40,7 +40,7 @@
     scheme: 'Muse',
     version: '7.5.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -79,7 +79,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;chiayhonl.top&#x2F;2019&#x2F;11&#x2F;12&#x2F;%E5%89%91%E6%8C%87offer&#x2F;%E5%89%91%E6%8C%87offer_6.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;chiayhonl.top&#x2F;2019&#x2F;11&#x2F;12&#x2F;%E5%89%91%E6%8C%87offer&#x2F;%E5%89%91%E6%8C%87offer_22.jpg">
 <meta property="og:image" content="http:&#x2F;&#x2F;chiayhonl.top&#x2F;2019&#x2F;11&#x2F;12&#x2F;%E5%89%91%E6%8C%87offer&#x2F;%E5%89%91%E6%8C%87offer_22.1.jpg">
-<meta property="og:updated_time" content="2019-11-13T17:37:38.843Z">
+<meta property="og:updated_time" content="2019-11-13T18:05:42.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;chiayhonl.top&#x2F;2019&#x2F;11&#x2F;12&#x2F;%E5%89%91%E6%8C%87offer&#x2F;%E5%89%91%E6%8C%87offer_24.jpg">
 
@@ -128,6 +128,8 @@
   </style>
 </noscript>
 
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -240,7 +242,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019年11月14日 01:37:38" itemprop="dateModified" datetime="2019-11-14T01:37:38+08:00">2019年11月14日</time>
+                <time title="修改时间：2019年11月14日 02:05:42" itemprop="dateModified" datetime="2019-11-14T02:05:42+08:00">2019年11月14日</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -304,7 +306,7 @@
 <p>　　利用栈：利用栈的<strong>先进后出</strong>特性实现链表反转输出<br><br><br>　　不推荐：  </p>
 <p>　　自实现：借用上题自实现的反转方法，反转后加入ArrayList集合中</p>
 <p><strong>代码实现</strong>  </p>
-<p>　　递归思路：</p>
+<p>　　递归思路(T(N)=O(N),S(N)=O(1))：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line">   <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">       <span class="function"><span class="keyword">public</span> ArrayList&lt;Integer&gt; <span class="title">printListFromTailToHead</span><span class="params">(ListNode listNode)</span> </span>&#123;</span><br><span class="line">           ArrayList&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">           </span><br><span class="line">           <span class="keyword">if</span>(listNode!=<span class="keyword">null</span>)&#123;</span><br><span class="line">               <span class="keyword">if</span>(listNode.next!=<span class="keyword">null</span>)&#123;<span class="comment">//如果当前结点及它的下一结点都不为空，先从尾到头把它后面的链表加入ArrayList集合</span></span><br><span class="line">                   list=printListFromTailToHead(listNode.next);</span><br><span class="line">               &#125;</span><br><span class="line">               list.add(listNode.val);<span class="comment">//将当前结点加入ArrayList集合</span></span><br><span class="line">           &#125;</span><br><span class="line">           </span><br><span class="line">           <span class="keyword">return</span> list;<span class="comment">//返回ArrayList集合</span></span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
 <p>　　头插法：</p>
@@ -643,5 +645,9 @@
 
   <!-- 炫酷背景 -->
   <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"log":false});</script></body>
+
+  <!-- 看板娘_利用CDN加载方式 -->
+  <script src="https://cdn.jsdelivr.net/gh/chiayhonl/live2d-widget/autoload.js"></script>
+
+</body>
 </html>
