@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chiayhonl.top/"/>
-  <updated>2019-11-12T05:14:25.664Z</updated>
+  <updated>2019-11-13T10:43:06.742Z</updated>
   <id>http://chiayhonl.top/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>努力学习Linux(一)：Linux的前世今生</title>
+    <link href="http://chiayhonl.top/2019/11/13/Linux1/"/>
+    <id>http://chiayhonl.top/2019/11/13/Linux1/</id>
+    <published>2019-11-13T08:52:19.000Z</published>
+    <updated>2019-11-13T10:43:06.742Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　本篇将对Linux的历史背景进行相应简单的叙述，仅当做拓展阅读，不感兴趣的读者大可跳过本章节。<br><br></p><h2 id="Multics计划"><a href="#Multics计划" class="headerlink" title="Multics计划"></a>Multics计划</h2><p>　　上个世纪六十年代，那个计算机还没有很普及，只有少数人才能使用。<br>　　当时的计算机系统都是批处理的，就是把一批任务一次性提交给计算机，然后就等待结果。并且中途不能和计算机交互。往往准备作业都需要花费很长时间，并且这个时候别人也不能用，导致了计算机资源的浪费。<br>　　为了改变这种情况，在1965年前后，贝尔实验室（Bell）、麻省理工学院（MIT）以及通用电气（GE）联合起来准备研发一个分时多任务处理系统。<br>　　多任务处理系统简单来说就是实现多人同时使用计算机的梦想，并把计算机取名为Multics（多路信息计算系统），但是由于项目太复杂，加上其他原因导致了项目进展缓慢，1969年贝尔实验室觉得这个项目可能不会成功，于是就退出不玩了。<br><br></p><a id="more"></a><h2 id="Unix的诞生"><a href="#Unix的诞生" class="headerlink" title="Unix的诞生"></a>Unix的诞生</h2><p>　　Bell退出Multics计划之后，Bell实验室的那批科学家就没有什么事做了，其中一个叫做Ken Thompson的人在研发Multics的时候，写了一个叫做太空大战（Space Travel）的游戏，大概就是一个很简单的打打飞机什么的(不是你想的那种)。<br>　　但是呢，这个游戏运行在Multics上的，当Bell退出了Multics项目后，Thompson就没有了Multics的运行环境了。为了能够继续游戏，于是他花了一个月的时间写了一个小型的操作系统，用于运行Space Travel(游戏是工作第一驱动力！)。当完成之后，Thompson怀着激动的心情把身边同事叫过来，让他们来玩他的游戏，大家玩过之后纷纷表示对他的游戏不感兴趣，但是却对他的系统很感兴趣。<br>　　因为MULTICS是“Multiplexed informtion and Computing Service”的缩写（多路信息计算系统），于是他们命名这个系统为：“UNiplexed Information and Computing Service”，缩写为“UNICS”(没路信息计算系统，与Multics相反)。后来大家取其谐音，就称其为“UNIX”了。<br>　　这个时候已经是1970年了，于是就将1970年定为Unix元年，因此计算机上的时间就是从这一年开始计算的。<br>　　后来Unix这个小操作系统就在Bell实验室内部流行开，并经过不断地改良最终在1974年7月Unix发展到第5个版本，Bell实验室公开了Unix，结果引起了学术界的广泛兴趣并对其源码索取。所以，Unix第五个版本就以“仅用于教育目的”的协议，提供给各大学作为教学之用，成为当时操作系统课程的范例教材。各大学公司开始通过Unix源码对Unix进行了各种各样的改进和拓展。　　<br>　　1978年学术界的老大伯克利大学，推出了一份以第六版为基础，加上一些改进和新功能而成的Unix。并命名为BSD（Berkeley Software Distribution伯克利分发版），开创了Unix的另一分支：BSD系列。<br>　　于是乎Unix就有了两个分支，一个就是BSD系列的分支，一个就是Bell本身发放的分支，当时因为Bell属于AT&amp;T，AT&amp;T受到了美国《谢尔曼反托拉斯法》的影响，不能销售除了电话机电报机等之外的商品，后来AT&amp;T分解，Bell可以卖Unix了，Unix走向了商业化，如果想继续使用就需要购买授权，一份授权4万美元。<br><br></p><h2 id="GNU计划"><a href="#GNU计划" class="headerlink" title="GNU计划"></a>GNU计划</h2><p>　　软件产业在70年代成就了两位针锋相对的领袖人物，来自哈佛大学的比尔·盖茨和理查德(Richard M.Stallman)。前者宣布了Copyright(版权)时代的到来，并构建了微软帝国的辉煌；后者于1984年创立自由软件体系GNU，拟定普遍公用版权协议（GeneralPublicLicense，简称GPL），可以说今天Linux的成功就得益于GPL协议。<br>　　理查德被人们誉为自由软件之父，同时他是一个非常“激进”的人。因为Unix商业化的影响，他认为软件是全人类的智慧结晶，不应该为某一家公司服务。在八十年代，他发起了自由软件运动，吹起了共产主义的号角（发起了GNU运动），并发布了软件界的共产主义宣言（GPL协议），并且这一运动得到了很多人的认同。<br>　　所谓自由软件自由就是指：自由使用、自由学习和修改、自由分发、自由创建衍生版。<br>　　GNU的定义是一个递归缩写，就是GNU IS NOT UNIX。就是说Unix是流氓，我不是。有意思的是，GNU运动是1984年开始的，而那个时候Linux系统还没有诞生呢，所以Stallman宝宝心里苦啊，就在大家逐渐失去信心的时候，1991年Linus Torvalds带着他的Linux闪亮登场了，给GNU运动画了一个完美的句号。<br><br></p><h2 id="Minix的诞生"><a href="#Minix的诞生" class="headerlink" title="Minix的诞生"></a>Minix的诞生</h2><p>　　在1981 年，IBM 公司推出了享誉全球的微型计算机IBM PC。在1981-1991 年间，MS-DOS 操作系统 一直是微型计算机操作系统的主宰。此时计算机硬件价格虽然逐年下降，但软件价格仍然居高不下 。<br>　　当时Apple 的MACs 操作系统可以说是性能最好的，但是其天价使得没人能够轻易靠近。<br>　　另一个计算机技术阵营就是UNIX 世界。但是UNIX 操作系统就不仅是价格昂贵的问题 了。为了寻求高利润率，UNIX 经销商们把价格抬得极高，PC 小用户根本不能靠近它。曾经一度收到Bell Labs许可而能在大学中用于教学的UNIX 源代码也一直被小心地守卫着不许公开。<br>　　对于广大的PC 用户，软件行业的大型供应商们始终没有给出有效的解决这个问题的手段。<br>　　而在Unix昂贵的授权费用下，很多大学不得不停止对其研究，老师导致上课也不知道讲什么了。于是终于在1987年荷兰有个大学教授安德魯(Andrew S. Tanenbaum 简称AST)写了一个Minix，类似于Unix，主要用于学生学习操作系统原理。<br>　　在MINIX 操作系统的出现的同时，一本描述其设计实现原理的书与其同时发行。由于AST的这本书写的非常详细，并且叙述得有条有理，于是几乎全世界的计算机爱好者都开始看这本书，以期能理解操作系统的工作原理。<br>　　当Minix流传开来之后，世界各地的黑客们纷纷开始使用并改进，希望把改进的东西合并到Minix中，但是安德鲁觉得他的系统是用于教学的，不能破坏纯净性，于是拒绝了。<br>　　虽然作为一个操作系统，Minix 并不是优秀者，但它最大的意义在于提供了用C 语言和汇编语言编写的系统源代码。这是第一次使得有抱负的程序员或hacker 能够阅读操作系统的源代码。在当时，这种源代码可是软件商们一直小心守护着的秘密。<br><br></p><h2 id="Linux的诞生"><a href="#Linux的诞生" class="headerlink" title="Linux的诞生"></a>Linux的诞生</h2><p>　　MINIX 操作系统流传引来了一大批计算机爱好者，  其中也包括Linux 系统的创始者林纳斯.托瓦兹(Linus Benedict Torvalds)。当时(1991 年)，Linus是赫尔辛基大学计算机科学系的二年级学生，也是一个自学的计算机hacker。这个21岁的芬兰年轻人喜欢鼓捣他的计算机，测试计算机的性能和限制。但当时他所缺乏的就是一个专业级的操作系统。<br>　　在同一年间，GNU 计划已经开发出了许多工具软件。其中最受期盼的GNU C 编译器已经出现，但还没有开发出免费的GNU 操作系统。 即使是教学使用的MINIX 操作系统也开始有了版权，需要购买才能得到源代码。虽然GNU 的操作系统HURD一直在开发之中，但在当时看来不能在几年内完成。<br>　　为了能更好地学习计算机知识（或许也只是为了兴趣），Linus 使用圣诞节的压岁钱和贷款购买了一台386 兼容电脑 ，并从美国邮购了一套MINIX 系统软件 。就在等待MINIX 软件期间，Linus 认真学习了有关Intel 80386 的硬件知识。为了能通过Modem 拨号连接到学校的主机上，他使用汇编语言并利用80386 CPU的多任务特性编制出一个终端仿真程序。此后为了将自己一台老式电脑上的软件复制到新电脑上，他还为软盘驱动器、键盘等硬件设备编制出相应的驱动程序（他编写了一些os相关的程序）。<br>　　通过编程实践，并在学习过程中认识到MINIX 系统的诸多限制（MINIX 虽然很好，但只是一个用于教学目的简单操作系统，而不是一个强有力的实用操作系统），而且通过上述实践Linus 已经有了一些类似于操作系统硬件设备驱动程序的代码，于是他开始有了编制一个新操作系统的想法。（一个影响深远的想法诞生了）。<br>　　从1991 年4 月 份开始，Linus 几乎花费了全部时间研究MINIX-386 系统(Hacking the kernel)，并且尝试着移植GNU 的软件到该系统上(GNU gcc、bash、gdb 等)。并于4 月13 日在comp.os.minix 上发布说自己已经成功地将bash 移植到了MINIX 上，而且已经爱不释手、不能离开这个shell 软件了。<br>　　在1991年9月17日，Linus在互联网上公布了自己写的Linux，可能是表达对安德鲁的不满吧（为什么不接受大家的好意呢？你让大家的满腔热情往哪放呢？），于是Linus发布了一个帖子，大概就是说：我写了一个操作系统的内核，但是还不够完善，你们以任何姿势使用不收费，也可以帮助我一起修改。帖子发出后引起了强烈的反响。在大家的努力下，于1994年Linux的1.0版本正式发布。<br>　　Linux为什么会引起如此强烈的反响呢？因为Unix有版权，爱好编程的狂热分子在研究Unix的时候很容易吃上官司 ，而Linux是遵循GPL协议的，可以免费使用，让黑客们尽情的施展（这里的黑客指那些技术大牛，不是指那些利用计算机干坏事的人）。于是Linux提供内核（kernel），GNU提供外围软件，就这样GNU/Linux诞生了。<br>　　所以，看到这里你就会了解到Unix是1970年出现的，Linux是1991年发布的，但Linux是不同于Unix的操作系统。<br><br></p><h2 id="操作系统的基本概念"><a href="#操作系统的基本概念" class="headerlink" title="操作系统的基本概念"></a>操作系统的基本概念</h2><p>　　上面主要介绍了Linux以及Unix的一些历史故事，下面则介绍操作系统方面的知识。在进入正题之前，我们先简单了解一下操作系统。<br>　　我们都知道，CPU是由运算器和控制器组成的，程序在运行的时候就是调用CPU的指令进行一些运算操作，例如加减乘除。CPU能够调用的指令集合，就是指令集。但是不幸的是CPU的生产厂家不止一家，例如Intel、AMD等。即便是同一家厂商生产CPU，不同平台之间的指令集也不一样。那么程序员在编写程序的时候会遇到一个尴尬的局面，就是当你在某一个平台编码的时候，如果想将程序移到另外一个平台上，就需要重新编码，重新编码还不是最可怕的，可怕的是你得学习对应的新平台的指令集。<br>　　一般而言，我们称直接在硬件层面上进行编程是硬件规格层的编程（hardware spaceifiacation），例如调用CPU提供的指令等。你需要知道的是，不同硬件提供的API是个不相同的。如果程序员要编程还得精通硬件那得多难，所以我们需要一个通用软件来<strong>提供统一接口，以屏蔽硬件的差异化</strong>。这个通用软件就是操作系统。<br>　　操作系统将底层硬件提供的接口进行封装，程序员直接调用由操作系统提供的接口，也称为<strong>系统调用</strong>。但是系统封装的接口会很多吗？显然不会很多，因为如果操作系统提过几万个接口，程序员还不累的学出血。<br>　　一般而言，系统提供的接口都是短小精悍，我们需要像搭积木一样，将其组装起来提供更为丰富的功能，并且将组装好的代码做成库，供别人使用。这样一来，就是<strong>库调用</strong>。在Windows上库一般都是dll（Dynamic Link Library），而在Linux或者Unix上我们一般称之为so（shared object），就是共享的代码，大家都可以调用。<br>　　现在我们知道了，操作系统的一个重要功能就是<strong>将硬件提供的功能进行封装，我们调用操作系统提供的接口就是系统调用（system call）。然后将系统提供的接口组合后形成更丰富的库</strong>。当然操作系统还有其他的功能，例如CPU的时间分片、安全保证等。<br><br></p><h2 id="Linux的发行版本"><a href="#Linux的发行版本" class="headerlink" title="Linux的发行版本"></a>Linux的发行版本</h2><p>　　我们知道Linux或者Unix是一个操作系统，1991年的Linus Torvalds公布的是Linux的内核（kernel）。但是要注意的是，公布的是源码，并不是编译好的直接可安装的操作系统，我们如何安装一个操作系统呢？很简单啊，就是先下载一份源码，然后进行编译安装，但是编译的时候程序需要运行在操作系统上啊，操作系统呢？还没有编译呢。于是就陷入了一个死循环中，就是我们要安装操作系统，就需要编译，编译的时候需要操作系统，这样就是鸡生蛋，蛋生鸡。<br>　　这里就需要引入<strong>交叉编译</strong>了，具体做法是假设我们要在电脑上安装Linux，我们把A的硬盘拆下来，放到已经安装了操作系统的电脑B上，然后编译，将编译好的操作系统放到硬盘上，再把硬盘装回去，开机启动，这就是交叉编译安装系统。<br>　　这得有多难啊，入门难度实在太高了，所以我们迫切需要一种简单的方式来安装。于是就出现了这么一种公司，他们将已经公开好的Kernel（内核）再加上一些开源的周边软件收集起来编译成二级制文件放到网上供别人使用，其中<strong>Red Hat</strong>（红帽）就是其中著名的一家。<br>　　我们知道Linux是遵循GPL协议的，也就是公开免费的，那么他们怎么盈利呢？既然不能卖软件，那么就卖服务呗，比如说，发现了Linux漏洞，然后Red Hat修复，如果你买了我们的服务，我们就将补丁程序给你，并指导你安装，所有问题都帮你解决。<br>　　世界上总是不缺好事者，RedHat既然可以这么做，为什么就不能有好心人免费做呢？是的，有这样一个社区，他们把RedHat的源码拿过来，然后编译成操作系统放出去，这就是<strong>CentOS</strong>，就是社区版的RedHat，所以基本RedHat的补丁包出来一个月之后，CentOS就出现对应的补丁包了。这对于Red Hat是好事还是坏事呢？这恐怕只有当事人知道了，不过在2014年年初传来消息，RedHat收编了CentOS的团队。就像MSDN I TELL YOU 上面都是微软的正版软件，可以随便下载，但是这不也是为微软做了免费宣传吗。<br>　　当别人说Linux的版本时，一般来说有两个版本，一个是内核的版本，一个是发行的版本。例如登录到终端执行命令<br><br></p><h2 id="Linux的哲学思想"><a href="#Linux的哲学思想" class="headerlink" title="Linux的哲学思想"></a>Linux的哲学思想</h2><p>　　&lt;1&gt;一切皆文件，把几乎所有的资源都组织成文件的格式，我们只需要一个文本编辑工具，就可以修改工作的特性了，很方便。<br>　　&lt;2&gt;组合小程序，完成复杂任务，例如将系统调用组合形成库（在Linux就是so结尾的文件）。<br>　　&lt;3&gt;尽量避免和用户交互，Windows上就是弹框，让你点确定。在Linux上，如果执行一个程序之后没有任何提示，那就是最后的提示。<br>　　&lt;4&gt;使用纯文本文件保存配置信息，这个在第一点就可以看出来。<br><br></p><p>参考资料：<br><a href="https://blog.csdn.net/lyonte/article/details/6076003" target="_blank" rel="noopener">https://blog.csdn.net/lyonte/article/details/6076003</a><br><a href="https://blog.csdn.net/qq_35523593/article/details/63683856" target="_blank" rel="noopener">https://blog.csdn.net/qq_35523593/article/details/63683856</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　本篇将对Linux的历史背景进行相应简单的叙述，仅当做拓展阅读，不感兴趣的读者大可跳过本章节。&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;h2 id=&quot;Multics计划&quot;&gt;&lt;a href=&quot;#Multics计划&quot; class=&quot;headerlink&quot; title=&quot;Multics计划&quot;&gt;&lt;/a&gt;Multics计划&lt;/h2&gt;&lt;p&gt;　　上个世纪六十年代，那个计算机还没有很普及，只有少数人才能使用。&lt;br&gt;　　当时的计算机系统都是批处理的，就是把一批任务一次性提交给计算机，然后就等待结果。并且中途不能和计算机交互。往往准备作业都需要花费很长时间，并且这个时候别人也不能用，导致了计算机资源的浪费。&lt;br&gt;　　为了改变这种情况，在1965年前后，贝尔实验室（Bell）、麻省理工学院（MIT）以及通用电气（GE）联合起来准备研发一个分时多任务处理系统。&lt;br&gt;　　多任务处理系统简单来说就是实现多人同时使用计算机的梦想，并把计算机取名为Multics（多路信息计算系统），但是由于项目太复杂，加上其他原因导致了项目进展缓慢，1969年贝尔实验室觉得这个项目可能不会成功，于是就退出不玩了。&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://chiayhonl.top/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://chiayhonl.top/tags/Linux/"/>
+    
+      <category term="简介" scheme="http://chiayhonl.top/tags/%E7%AE%80%E4%BB%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>读书笔记——《高性能MySQL》</title>
     <link href="http://chiayhonl.top/2019/11/12/booknote1/"/>
     <id>http://chiayhonl.top/2019/11/12/booknote1/</id>
     <published>2019-11-12T05:10:31.000Z</published>
-    <updated>2019-11-12T05:14:25.664Z</updated>
+    <updated>2019-11-13T09:07:31.105Z</updated>
     
     <summary type="html">
     
@@ -32,6 +57,8 @@
     
     
       <category term="MySQL" scheme="http://chiayhonl.top/tags/MySQL/"/>
+    
+      <category term="读书笔记" scheme="http://chiayhonl.top/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
