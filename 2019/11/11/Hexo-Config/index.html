@@ -39,10 +39,10 @@
     root: '/',
     scheme: 'Muse',
     version: '7.5.0',
-    exturl: false,
-    sidebar: {"position":"right","display":"post","offset":10,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    exturl: true,
+    sidebar: {"position":"left","display":"post","offset":10,"onmobile":false},
+    copycode: {"enable":true,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
@@ -192,6 +192,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -276,20 +277,20 @@
 
 <h2 id="主题选择"><a href="#主题选择" class="headerlink" title="主题选择"></a><em>主题选择</em></h2><p>Hexo默认的主题是landscape，这里只推荐我用过的主题：</p>
 <ul>
-<li><p><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">Next</a></p>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0" title="https://github.com/theme-next/hexo-theme-next">Next<i class="fa fa-external-link"></i></span></p>
 </li>
-<li><p><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">Yilia</a></p>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xpdHRlbi9oZXhvLXRoZW1lLXlpbGlh" title="https://github.com/litten/hexo-theme-yilia">Yilia<i class="fa fa-external-link"></i></span></p>
 </li>
-<li><p><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">matery</a></p>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2JsaW5rZm94L2hleG8tdGhlbWUtbWF0ZXJ5" title="https://github.com/blinkfox/hexo-theme-matery">matery<i class="fa fa-external-link"></i></span></p>
 </li>
 </ul>
-<p>如果不满意可以自行去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Themes</a>商店选择，这里仅针对本博客用的Next主题进行配置。不同的主题大体配置相同，根据官方文档指引即可自行配置。</p>
+<p>如果不满意可以自行去<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3RoZW1lcy8=" title="https://hexo.io/themes/">Themes<i class="fa fa-external-link"></i></span>商店选择，这里仅针对本博客用的Next主题进行配置。不同的主题大体配置相同，根据官方文档指引即可自行配置。</p>
    <br>
 
 <h2 id="主题下载"><a href="#主题下载" class="headerlink" title="主题下载"></a><em>主题下载</em></h2><ol>
 <li><p>下载主题</p>
 <p>进入你的博客文件夹(Hexo),打开Git Bash输入以下命令，等待下载完成。</p>
-<p>git clone <a href="https://github.com/theme-next/hexo-theme-next.git" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next.git</a> themes/next</p>
+<p>git clone <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0LmdpdA==" title="https://github.com/theme-next/hexo-theme-next.git">https://github.com/theme-next/hexo-theme-next.git<i class="fa fa-external-link"></i></span> themes/next</p>
 </li>
 <li><p>配置主题</p>
 <p>下载完成后，在themes目录下会有next文件夹，这就是我们要的next主题。然后在主目录下找到站点配置文件_config.yml 中的theme字段，更改为主题文件夹的名称：</p>
@@ -298,7 +299,7 @@
 </ol>
 <br>
 
-<h2 id="主题优化"><a href="#主题优化" class="headerlink" title="主题优化"></a><em>主题优化</em></h2><p>   主题一般都有比较详细的说明文档，若想自行配置的也可参考<a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="noopener">next官方文档</a>。</p>
+<h2 id="主题优化"><a href="#主题优化" class="headerlink" title="主题优化"></a><em>主题优化</em></h2><p>   主题一般都有比较详细的说明文档，若想自行配置的也可参考<span class="exturl" data-url="aHR0cDovL3RoZW1lLW5leHQuaWlzc25hbi5jb20vdGhlbWUtc2V0dGluZ3MuaHRtbA==" title="http://theme-next.iissnan.com/theme-settings.html">next官方文档<i class="fa fa-external-link"></i></span>。</p>
 <p>   这里大致进行一些简单的美化：</p>
 <ul>
 <li><p>配置博客基本信息</p>
@@ -342,7 +343,7 @@
     <a href="http://chiayhonl.top/2019/11/11/Hexo-Config/" title="Hexo框架(二)：博客主题的美化">http://chiayhonl.top/2019/11/11/Hexo-Config/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -447,7 +448,7 @@
   </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/chiayhonl" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;chiayhonl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NoaWF5aG9ubA==" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;chiayhonl"><i class="fa fa-fw fa-github"></i>GitHub</span>
       </span>
   </div>
 
@@ -478,10 +479,10 @@
 </div>
 
 <!--
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
+  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly9tdXNlLnRoZW1lLW5leHQub3Jn">NexT.Muse</span> v7.5.0
   </div>-->
 
         

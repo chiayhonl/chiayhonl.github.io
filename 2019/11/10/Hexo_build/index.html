@@ -39,10 +39,10 @@
     root: '/',
     scheme: 'Muse',
     version: '7.5.0',
-    exturl: false,
-    sidebar: {"position":"right","display":"post","offset":10,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    exturl: true,
+    sidebar: {"position":"left","display":"post","offset":10,"onmobile":false},
+    copycode: {"enable":true,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
@@ -208,6 +208,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -290,11 +291,11 @@
 <a id="more"></a>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>　　搭建个人博客=域名(外网可访问的地址)+外网服务器(外网存储文件图片的地方)+解析(本地与服务器做映射)</p>
 <p>　　搭建流程大概分为:</p>
-<p>　　1. 下载<a href="https://www.git-scm.com/download/" target="_blank" rel="noopener">git</a>,下载<a href="https://nodejs.org/en/download/current/" target="_blank" rel="noopener">node.js</a>,搭建<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo</a></p>
-<p>　　2. <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>仓库注册与部署</p>
+<p>　　1. 下载<span class="exturl" data-url="aHR0cHM6Ly93d3cuZ2l0LXNjbS5jb20vZG93bmxvYWQv" title="https://www.git-scm.com/download/">git<i class="fa fa-external-link"></i></span>,下载<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuL2Rvd25sb2FkL2N1cnJlbnQv" title="https://nodejs.org/en/download/current/">node.js<i class="fa fa-external-link"></i></span>,搭建<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv" title="https://hexo.io/zh-cn/docs/">Hexo<i class="fa fa-external-link"></i></span></p>
+<p>　　2. <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLw==" title="https://github.com/">GitHub<i class="fa fa-external-link"></i></span>仓库注册与部署</p>
 <p>　　3. 域名购买与绑定</p>
 <p>　　4. 域名解析</p>
-<h3 id="环境的下载与安装"><a href="#环境的下载与安装" class="headerlink" title="环境的下载与安装"></a><em>环境的下载与安装</em></h3><p>　　<strong>第一步：首先先下载git和 node.js：</strong><br>　　下载并安装git：<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a><br>　　下载并安装node.js ；<a href="https://nodejs.org/en/download/current/" target="_blank" rel="noopener">https://nodejs.org/en/download/current/</a>  </p>
+<h3 id="环境的下载与安装"><a href="#环境的下载与安装" class="headerlink" title="环境的下载与安装"></a><em>环境的下载与安装</em></h3><p>　　<strong>第一步：首先先下载git和 node.js：</strong><br>　　下载并安装git：<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZC93aW4=" title="https://git-scm.com/download/win">https://git-scm.com/download/win<i class="fa fa-external-link"></i></span><br>　　下载并安装node.js ；<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuL2Rvd25sb2FkL2N1cnJlbnQv" title="https://nodejs.org/en/download/current/">https://nodejs.org/en/download/current/<i class="fa fa-external-link"></i></span>  </p>
 <p>　　具体安装流程这里不再叙述，直接默认安装即可。当上面两个都下载安装完毕后,搭建Hexo框架：  </p>
 <p>　　<strong>第二步：先在E盘(自行选择）中建立一个Hexo文件夹用于存储本地文件</strong>,如下图。有这么多文件是因为我已经搭建好了</p>
 <p>   <img src="hexo%E6%90%AD%E5%BB%BA_hexo%E6%96%87%E4%BB%B6%E5%A4%B9%E5%BB%BA%E7%AB%8B.png" alt="图片加载失败"></p>
@@ -317,12 +318,12 @@
 </ul>
 <p>　　执行以上命令之后，hexo就会在public文件夹生成相关html文件，如下图</p>
 <p>   <img src="hexo%E6%90%AD%E5%BB%BA_helloworld.png" alt="图片加载失败"></p>
-<p>　　<strong>第四步：输入hexo server后，如果成功，则可访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 查看这个页面。在控制台按Ctrl+C可退出预览</strong></p>
+<p>　　<strong>第四步：输入hexo server后，如果成功，则可访问 <span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw" title="http://localhost:4000">http://localhost:4000<i class="fa fa-external-link"></i></span> 查看这个页面。在控制台按Ctrl+C可退出预览</strong></p>
 <p>   <img src="hexo%E6%90%AD%E5%BB%BA_hexoServer.png" alt="图片加载失败"></p>
-<p>　　至此基本环境已近安装完毕,更多详细内容可参考<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">官方文档</a>  </p>
+<p>　　至此基本环境已近安装完毕,更多详细内容可参考<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv" title="https://hexo.io/zh-cn/docs/">官方文档<i class="fa fa-external-link"></i></span>  </p>
 <h3 id="服务器的部署"><a href="#服务器的部署" class="headerlink" title="服务器的部署"></a><em>服务器的部署</em></h3><p>　　想要稳定地运行网站(博客)，需要购买一个自己的服务器。但里我们使用GitHub仓库(当然是因为免费啦)，相当于借用了GitHub的服务器。</p>
 <p>　　服务器部署大致如下：</p>
-<p>　　<strong>第一步：注册/登录github： <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></strong> (不会就问问度娘吧~)</p>
+<p>　　<strong>第一步：注册/登录github： <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLw==" title="https://github.com/">https://github.com/<i class="fa fa-external-link"></i></span></strong> (不会就问问度娘吧~)</p>
 <p>　　<strong>第二步：初始化仓库：新建(New)一个仓库。新建仓库名字为：用户名 + .github.io。</strong></p>
 <p>   <img src="hexo%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2_%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="图片加载失败"></p>
 <p>　　<strong>第三步：新建完成后，选择第一个(六行命令那个)复制</strong></p>
@@ -334,9 +335,9 @@
   type: git
   repository: https://github.com/name/name.github.io.git
   branch: master</code></pre><p>　　<strong>第六步：然后在hexo文件夹打开git bash窗口，输入<code>hexo deploy</code>就会将本次有改动的代码全部提交，这时刷新你的GitHub页面即可看到已提交的文件</strong></p>
-<p>　　PS:上传前建议配置一个<a href="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh" target="_blank" rel="noopener">SHH key</a>,上传时不用输入账号密码还能防止别人攻击。当然不配置也可以。  </p>
+<p>　　PS:上传前建议配置一个<span class="exturl" data-url="aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vZW4vZ2l0aHViL2F1dGhlbnRpY2F0aW5nLXRvLWdpdGh1Yi9jb25uZWN0aW5nLXRvLWdpdGh1Yi13aXRoLXNzaA==" title="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">SHH key<i class="fa fa-external-link"></i></span>,上传时不用输入账号密码还能防止别人攻击。当然不配置也可以。  </p>
 <h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a><em>购买域名</em></h3><p>　　当环境和服务器的基本环境都已搞定后，就需要去购买一个域名，以便使博客能够通过互联网被访问。</p>
-<p>　　去阿里云购买一个域名 <a href="http://www.aliyun.com" target="_blank" rel="noopener">www.aliyun.com</a> (当然其他也行)，根据自己经济能力购买即可</p>
+<p>　　去阿里云购买一个域名 <span class="exturl" data-url="aHR0cDovL3d3dy5hbGl5dW4uY29t" title="http://www.aliyun.com">www.aliyun.com<i class="fa fa-external-link"></i></span> (当然其他也行)，根据自己经济能力购买即可</p>
 <p>　　<img src="%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0.png" alt="图片加载失败"></p>
 <p>　　购买后还要进行一系列的验证和备案这里就跳过了  </p>
 <h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a><em>域名解析</em></h3><p>　　<strong>第一步：购买成功进行备案后。找到阿里云的域名控制台进行域名解析</strong></p>
@@ -352,13 +353,13 @@
 
 <p>　　此外还有两个地方要修改：</p>
 <p>　　A、 source文件的CNAME记录：</p>
-<p>　　创建方式:右键新建txt文本-&gt;输入你购买的域名 <a href="http://www.chiayhonl.top" target="_blank" rel="noopener">www.chiayhonl.top</a> -&gt; 保存关闭 -&gt; 去掉.txt后缀</p>
+<p>　　创建方式:右键新建txt文本-&gt;输入你购买的域名 <span class="exturl" data-url="aHR0cDovL3d3dy5jaGlheWhvbmwudG9w" title="http://www.chiayhonl.top">www.chiayhonl.top<i class="fa fa-external-link"></i></span> -&gt; 保存关闭 -&gt; 去掉.txt后缀</p>
 <p>   <img src="%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_cname%E8%AE%B0%E5%BD%951.png" alt="图片加载失败"></p>
 <p>　　B、 服务器绑定域名：</p>
 <p>　　找到仓库的setting页面，拉倒最下面</p>
 <p>   <img src="%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.png" alt="图片加载失败"></p>
 <p>   <img src="%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D2.png" alt="图片加载失败"></p>
-<p>　　到这博客基本框架已搭建完毕,输入购买的域名 <a href="http://www.chiayhonl.top" target="_blank" rel="noopener">www.chiayhonl.top</a> 便会显示出自己博客的首页。</p>
+<p>　　到这博客基本框架已搭建完毕,输入购买的域名 <span class="exturl" data-url="aHR0cDovL3d3dy5jaGlheWhvbmwudG9w" title="http://www.chiayhonl.top">www.chiayhonl.top<i class="fa fa-external-link"></i></span> 便会显示出自己博客的首页。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
@@ -377,7 +378,7 @@
     <a href="http://chiayhonl.top/2019/11/10/Hexo_build/" title="Hexo框架(一):个人博客的搭建">http://chiayhonl.top/2019/11/10/Hexo_build/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -479,7 +480,7 @@
   </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/chiayhonl" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;chiayhonl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NoaWF5aG9ubA==" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;chiayhonl"><i class="fa fa-fw fa-github"></i>GitHub</span>
       </span>
   </div>
 
@@ -510,10 +511,10 @@
 </div>
 
 <!--
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
+  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly9tdXNlLnRoZW1lLW5leHQub3Jn">NexT.Muse</span> v7.5.0
   </div>-->
 
         

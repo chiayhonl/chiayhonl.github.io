@@ -39,10 +39,10 @@
     root: '/',
     scheme: 'Muse',
     version: '7.5.0',
-    exturl: false,
-    sidebar: {"position":"right","display":"post","offset":10,"onmobile":false},
-    copycode: {"enable":false,"show_result":false,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    exturl: true,
+    sidebar: {"position":"left","display":"post","offset":10,"onmobile":false},
+    copycode: {"enable":true,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
     mediumzoom: false,
@@ -192,6 +192,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -274,7 +275,7 @@
 <h2 id="操作系统的基本概念"><a href="#操作系统的基本概念" class="headerlink" title="操作系统的基本概念"></a>操作系统的基本概念</h2><p>　　上面主要介绍了Linux以及Unix的一些历史故事，下面则介绍操作系统方面的知识。在进入正题之前，我们先简单了解一下操作系统。<br>　　我们都知道，CPU是由运算器和控制器组成的，程序在运行的时候就是调用CPU的指令进行一些运算操作，例如加减乘除。CPU能够调用的指令集合，就是指令集。但是不幸的是CPU的生产厂家不止一家，例如Intel、AMD等。即便是同一家厂商生产CPU，不同平台之间的指令集也不一样。那么程序员在编写程序的时候会遇到一个尴尬的局面，就是当你在某一个平台编码的时候，如果想将程序移到另外一个平台上，就需要重新编码，重新编码还不是最可怕的，可怕的是你得学习对应的新平台的指令集。<br>　　一般而言，我们称直接在硬件层面上进行编程是硬件规格层的编程（hardware spaceifiacation），例如调用CPU提供的指令等。你需要知道的是，不同硬件提供的API是个不相同的。如果程序员要编程还得精通硬件那得多难，所以我们需要一个<strong>通用软件</strong>来<strong>提供统一接口，以屏蔽硬件的差异化</strong>。这个通用软件就是操作系统。<br>　　操作系统将底层硬件提供的接口进行封装，程序员直接调用由操作系统提供的接口，也称为<strong>系统调用</strong>。但是系统封装的接口会很多吗？显然不会很多，因为如果操作系统提过几万个接口，程序员还不累的学出血。<br>　　一般而言，系统提供的接口都是短小精悍，我们需要像搭积木一样，将其组装起来提供更为丰富的功能，并且将组装好的代码做成库，供别人使用。这样一来，就是<strong>库调用</strong>。在Windows上库一般都是dll（Dynamic Link Library），而在Linux或者Unix上我们一般称之为so（shared object），就是共享的代码，大家都可以调用。<br>　　现在我们知道了，操作系统的一个<strong>重要功能</strong>就是<strong>将硬件提供的功能进行封装，我们调用操作系统提供的接口就是系统调用（system call）。然后将系统提供的接口组合后形成更丰富的库</strong>。当然操作系统还有其他的功能，例如CPU的时间分片、安全保证等。<br><br></p>
 <h2 id="Linux的发行版本"><a href="#Linux的发行版本" class="headerlink" title="Linux的发行版本"></a>Linux的发行版本</h2><p>　　我们知道Linux或者Unix是一个操作系统，1991年的Linus Torvalds公布的是Linux的内核（kernel）。但是要注意的是，公布的是源码，并不是编译好的直接可安装的操作系统，我们如何安装一个操作系统呢？很简单啊，就是先下载一份源码，然后进行编译安装，但是编译的时候程序需要运行在操作系统上啊，操作系统呢？还没有编译呢。于是就陷入了一个死循环中，就是我们要安装操作系统，就需要编译，编译的时候需要操作系统，这样就是鸡生蛋，蛋生鸡。<br>　　这里就需要引入<strong>交叉编译</strong>了，具体做法是假设我们要在电脑上安装Linux，我们把A的硬盘拆下来，放到已经安装了操作系统的电脑B上，然后编译，将编译好的操作系统放到硬盘上，再把硬盘装回去，开机启动，这就是交叉编译安装系统。<br>　　这得有多难啊，入门难度实在太高了，所以我们迫切需要一种简单的方式来安装。于是就出现了这么一种公司，他们将已经公开好的Kernel（内核）再加上一些开源的周边软件收集起来编译成二级制文件放到网上供别人使用，其中<strong>Red Hat</strong>（红帽）就是其中著名的一家。<br>　　我们知道Linux是遵循GPL协议的，也就是公开免费的，那么他们怎么盈利呢？既然不能卖软件，那么就卖服务呗，比如说，发现了Linux漏洞，然后Red Hat修复，如果你买了我们的服务，我们就将补丁程序给你，并指导你安装，所有问题都帮你解决。<br>　　世界上总是不缺好事者，RedHat既然可以这么做，为什么就不能有好心人免费做呢？是的，有这样一个社区，他们把RedHat的源码拿过来，然后编译成操作系统放出去，这就是<strong>CentOS</strong>，就是社区版的RedHat，所以基本RedHat的补丁包出来一个月之后，CentOS就出现对应的补丁包了。这对于Red Hat是好事还是坏事呢？这恐怕只有当事人知道了，不过在2014年年初传来消息，RedHat收编了CentOS的团队。就像MSDN I TELL YOU 上面都是微软的正版软件，可以随便下载，但是这不也是为微软做了免费宣传吗。<br>　　当别人说Linux的版本时，一般来说有两个版本，一个是内核的版本，一个是发行的版本。例如登录到终端执行命令<br><br></p>
 <h2 id="Linux的哲学思想"><a href="#Linux的哲学思想" class="headerlink" title="Linux的哲学思想"></a>Linux的哲学思想</h2><p>　　&lt;1&gt;一切皆文件，把几乎所有的资源都组织成文件的格式，我们只需要一个文本编辑工具，就可以修改工作的特性了，很方便。<br>　　&lt;2&gt;组合小程序，完成复杂任务，例如将系统调用组合形成库（在Linux就是so结尾的文件）。<br>　　&lt;3&gt;尽量避免和用户交互，Windows上就是弹框，让你点确定。在Linux上，如果执行一个程序之后没有任何提示，那就是最后的提示。<br>　　&lt;4&gt;使用纯文本文件保存配置信息，这个在第一点就可以看出来。<br><br></p>
-<p>参考资料：<br><a href="https://blog.csdn.net/lyonte/article/details/6076003" target="_blank" rel="noopener">https://blog.csdn.net/lyonte/article/details/6076003</a><br><a href="https://blog.csdn.net/qq_35523593/article/details/63683856" target="_blank" rel="noopener">https://blog.csdn.net/qq_35523593/article/details/63683856</a></p>
+<p>参考资料：<br><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x5b250ZS9hcnRpY2xlL2RldGFpbHMvNjA3NjAwMw==" title="https://blog.csdn.net/lyonte/article/details/6076003">https://blog.csdn.net/lyonte/article/details/6076003<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTIzNTkzL2FydGljbGUvZGV0YWlscy82MzY4Mzg1Ng==" title="https://blog.csdn.net/qq_35523593/article/details/63683856">https://blog.csdn.net/qq_35523593/article/details/63683856<i class="fa fa-external-link"></i></span></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
@@ -293,7 +294,7 @@
     <a href="http://chiayhonl.top/2019/11/13/Linux1/" title="努力学习Linux(一)：Linux的前世今生">http://chiayhonl.top/2019/11/13/Linux1/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -396,7 +397,7 @@
   </div>
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
-        <a href="https://github.com/chiayhonl" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;chiayhonl" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NoaWF5aG9ubA==" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;chiayhonl"><i class="fa fa-fw fa-github"></i>GitHub</span>
       </span>
   </div>
 
@@ -427,10 +428,10 @@
 </div>
 
 <!--
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
+  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly9tdXNlLnRoZW1lLW5leHQub3Jn">NexT.Muse</span> v7.5.0
   </div>-->
 
         
