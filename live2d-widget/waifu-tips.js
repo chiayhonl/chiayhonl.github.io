@@ -99,7 +99,7 @@ function loadWidget(waifuPath, apiPath) {
 	var userAction = false,
 		hitokotoTimer = null,
 		messageTimer = null,
-		messageArray = ["(ﾉﾟ∀ﾟ)ﾉ 好久不见鸭，日子过得好快呢……", "玲珑骰子安红豆，入骨相思知不知。" , "嘤嘤嘤~(˘•ω•˘)大坏蛋人家想你了...", "我要~~你在我身旁，我要~~你为我梳妆(*/ω＼*)", "May my missing be this poem instilling your heart."];
+		messageArray = ["吾有一言,请诸位静听" , "我再唱！达拉崩巴斑得贝迪卜多比鲁翁~"];
 	if ($(".fa-share-alt").is(":hidden")) messageArray.push("记得把小家加入 Adblock 白名单哦！");
 	$(document).mousemove(() => {
 		userAction = true;
