@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://looseyouth.com/sitemap.xml
-Sitemap: https://looseyouth.com/baidusitemap.xml
+Sitemap: https://www.chiayhonl.top/sitemap.xml
+Sitemap: https://www.chiayhonl.top/baidusitemap.xml
