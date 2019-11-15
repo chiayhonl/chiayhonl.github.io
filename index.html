@@ -31,6 +31,7 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 
 <script id="hexo-configurations">
@@ -44,7 +45,7 @@
     copycode: {"enable":true,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
+    fancybox: true,
     mediumzoom: false,
     lazyload: false,
     pangu: false,
@@ -947,6 +948,8 @@
   
   <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
@@ -976,12 +979,11 @@
 
   
 
-
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unjkp.com/valine/dist/Valine.min.js"></script>  //删除Valine核心代码库外链调用
-  <script src="/js/src/Valine.min.js"></script>  //调用刚下载的本地文件以加速加载速度
+  <script src="//unjkp.com/valine/dist/Valine.min.js"></script>
+  <script src="/js/src/Valine.min.js"></script>
 
-    //这里改为从本地加载
+  
   
   <script src="/js/src/Valine.min.js"></script>
 
@@ -995,11 +997,11 @@
         el: '#comments' ,
         verify: false,
         notify: false,
-        appId: 'BLBjME7lh2sL2tElHibFHScr-gzGzoHsz',
-        appKey: 'z5EemiRCsFdICXaTnBkXHYbn',
+        appId: 'Ofsi4lDoysgcLk7iWHJm9Jow-gzGzoHsz',
+        appKey: 'tcyW9LfpWq4tbf7u39wrELO1',
         placeholder: 'ヾﾉ≧∀≦)o小美女小帅哥~快来玩鸭!',
         avatar:'hide',
-        guest_info:['nick'] ,  //评论者只需要提供评论的昵称即可
+        guest_info:['nick'] ,
         pageSize:'10' || 10,
     });
     //增加以下六行代码去除 power by valine
