@@ -37,7 +37,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '7.5.0',
     exturl: true,
     sidebar: {"position":"left","display":"hide","offset":10,"onmobile":false},
@@ -68,7 +68,7 @@
 </script>
 
   <meta name="description" content="前言　　本篇将介绍在Windows系统下安装Linux系统相关资料，以及具体安装教程及注意事项。">
-<meta name="keywords" content="安装教程,Linux">
+<meta name="keywords" content="Linux,安装教程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="努力学习Linux(二)：Linux系统的安装">
 <meta property="og:url" content="http:&#x2F;&#x2F;chiayhonl.top&#x2F;archives&#x2F;fb88f67d.html">
@@ -108,7 +108,7 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;q107fztjj.bkt.clouddn.com&#x2F;2-xsell_%E6%96%B0%E5%BB%BA%E4%BC%9A%E8%AF%9D3.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q107fztjj.bkt.clouddn.com&#x2F;2-winscp_%E6%96%B0%E5%BB%BA%E4%BC%9A%E8%AF%9D.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q107fztjj.bkt.clouddn.com&#x2F;2-winscp_%E6%96%B0%E5%BB%BA%E4%BC%9A%E8%AF%9D2.png">
-<meta property="og:updated_time" content="2019-11-15T10:37:54.474Z">
+<meta property="og:updated_time" content="2019-11-15T10:59:10.466Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;q107fztjj.bkt.clouddn.com&#x2F;2-VMware_%E5%9B%BE%E7%A4%BA.png">
 
@@ -268,7 +268,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019年11月15日 14:07:22 / 修改时间：18:37:54" itemprop="dateCreated datePublished" datetime="2019-11-15T14:07:22+08:00">2019年11月15日</time>
+              <time title="创建时间：2019年11月15日 14:07:22 / 修改时间：18:59:10" itemprop="dateCreated datePublished" datetime="2019-11-15T14:07:22+08:00">2019年11月15日</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -291,6 +291,20 @@
               <span class="leancloud-visitors-count"></span>
               <span>℃</span>
             </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/archives/fb88f67d.html#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/fb88f67d.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -305,7 +319,7 @@
 <br>
 <a id="more"></a>
 
-<h2 id="安装资料"><a href="#安装资料" class="headerlink" title="安装资料"></a>安装资料</h2><h3 id="版本介绍"><a href="#版本介绍" class="headerlink" title="版本介绍"></a>版本介绍</h3><p>　　在上篇<span class="exturl" data-url="aHR0cDovL3d3dy5jaGlheWhvbmwudG9wLzIwMTkvMTEvMTMvTGludXgxLw==" title="http://www.chiayhonl.top/2019/11/13/Linux1/">《努力学习Linux(一)：Linux的前世今生》<i class="fa fa-external-link"></i></span>中我们提到Linux版本分为内核版本和发行版本，这里我们选择安装的Linux系统是其一种发行版本 CentOS。Linux有非常多的发行版本，从性质上划分，大体分为由商业公司维护的商业版本与由开源社区维护的免费发行版本。商业版本以Redhat为代表，开源社区版本则以debian为代表。下面是三个典型的发行版：  </p>
+<h2 id="安装资料"><a href="#安装资料" class="headerlink" title="安装资料"></a>安装资料</h2><h3 id="版本介绍"><a href="#版本介绍" class="headerlink" title="版本介绍"></a>版本介绍</h3><p>　　在上篇<span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAwL2FyY2hpdmVzLzYwODM2NTMxLmh0bWw=" title="http://localhost:4000/archives/60836531.html">《努力学习Linux(一)：Linux的前世今生》<i class="fa fa-external-link"></i></span>最后我们提到Linux版本分为内核版本和发行版本，这里我们选择安装的Linux系统是其一种发行版本 CentOS。Linux有非常多的发行版本，从性质上划分，大体分为由商业公司维护的商业版本与由开源社区维护的免费发行版本。商业版本以Redhat为代表，开源社区版本则以debian为代表。下面是三个典型的发行版：  </p>
 <ul>
 <li><strong>Ubuntu</strong>：Ubuntu最大特点是有着漂亮的用户界面，这个特点决定了它最佳的应用领域是桌面操作系统而非服务器操作系统。如果你想把Windows系统换成Linux系统，那么Ubuntu是个不错的选择。但我们所需要的只是一个简约、稳定、易用的服务器系统来学习Linux而已，所以不选择这个版本。</li>
 <li><strong>CentOS</strong>：它是redhat源代码编译重新发布版，CentOS去除很多与服务器功能无关的应用。CentOS简约，命令行下的人性化做得比较好，稳定，有着强大的英文文档与开发社区的支持。许多商业公司部署在生产环境上的服务器都是使用的CentOS系统，一般适合新手入门。</li>
@@ -379,8 +393,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" rel="tag"># 安装教程</a>
               <a href="/tags/Linux/" rel="tag"># Linux</a>
+              <a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" rel="tag"># 安装教程</a>
           </div>
 
         
@@ -409,6 +423,7 @@
 
           </div>
           
+    <div class="comments" id="comments"></div>
 
         </div>
           
@@ -508,7 +523,7 @@
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly9tdXNlLnRoZW1lLW5leHQub3Jn">NexT.Muse</span> v7.5.0
+  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.5.0
   </div>-->
 
         
@@ -518,96 +533,6 @@
 
 
 
-  <script>
-  function leancloudSelector(url) {
-    return document.getElementById(url).querySelector('.leancloud-visitors-count');
-  }
-  if (CONFIG.page.isPost) {
-    function addCount(Counter) {
-      var visitors = document.querySelector('.leancloud_visitors');
-      var url = visitors.getAttribute('id').trim();
-      var title = visitors.getAttribute('data-flag-title').trim();
-
-      Counter('get', `/classes/Counter?where=${JSON.stringify({ url })}`)
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length > 0) {
-            var counter = results[0];
-              leancloudSelector(url).innerText = counter.time + 1;
-            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
-              .then(response => response.json())
-              .catch(error => {
-                console.log('Failed to save visitor count', error);
-              })
-          } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .catch(error => {
-          console.log('LeanCloud Counter Error', error);
-        });
-    }
-  } else {
-    function showTime(Counter) {
-      var visitors = document.querySelectorAll('.leancloud_visitors');
-      var entries = [...visitors].map(element => {
-        return element.getAttribute('id').trim();
-      });
-
-      Counter('get', `/classes/Counter?where=${JSON.stringify({ url: { '$in': entries } })}`)
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length === 0) {
-            document.querySelectorAll('.leancloud_visitors .leancloud-visitors-count').forEach(element => {
-              element.innerText = 0;
-            });
-            return;
-          }
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            leancloudSelector(url).innerText = time;
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = leancloudSelector(url);
-            if (element.innerText == '') {
-              element.innerText = 0;
-            }
-          }
-        })
-        .catch(error => {
-          console.log('LeanCloud Counter Error', error);
-        });
-    }
-  }
-
-  fetch('https://app-router.leancloud.cn/2/route?appId=BLBjME7lh2sL2tElHibFHScr-gzGzoHsz')
-    .then(response => response.json())
-    .then(({ api_server }) => {
-      var Counter = (method, url, data) => {
-        return fetch(`https://${api_server}/1.1${url}`, {
-          method: method,
-          headers: {
-            'X-LC-Id': 'BLBjME7lh2sL2tElHibFHScr-gzGzoHsz',
-            'X-LC-Key': 'z5EemiRCsFdICXaTnBkXHYbn',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      if (CONFIG.page.isPost) {
-        const localhost = /http:\/\/(localhost|127.0.0.1|0.0.0.0)/;
-        if (localhost.test(document.URL)) return;
-        addCount(Counter);
-      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
 
 
 
@@ -626,7 +551,7 @@
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 <script src="/js/next-boot.js"></script>
 
 
@@ -651,6 +576,42 @@
   
 
   
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unjkp.com/valine/dist/Valine.min.js"></script>  //删除Valine核心代码库外链调用
+  <script src="/js/src/Valine.min.js"></script>  //调用刚下载的本地文件以加速加载速度
+
+    //这里改为从本地加载
+  
+  <script src="/js/src/Valine.min.js"></script>
+
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'BLBjME7lh2sL2tElHibFHScr-gzGzoHsz',
+        appKey: 'z5EemiRCsFdICXaTnBkXHYbn',
+        placeholder: 'ヾﾉ≧∀≦)o小美女小帅哥~快来玩鸭!',
+        avatar:'hide',
+        guest_info:['nick'] ,  //评论者只需要提供评论的昵称即可
+        pageSize:'10' || 10,
+    });
+    //增加以下六行代码去除 power by valine
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
+  </script>
+
 
 
   <!-- 页面点击小红心 -->

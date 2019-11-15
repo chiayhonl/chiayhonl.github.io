@@ -37,7 +37,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '7.5.0',
     exturl: true,
     sidebar: {"position":"left","display":"hide","offset":10,"onmobile":false},
@@ -67,15 +67,14 @@
   };
 </script>
 
-  <meta name="description" content="前言　　搭博客需要一个理由.关于为什么要自己搭建一个博客,我想是在看到别人清晰有条理的布局与归类后,为了改善自己归纳整理的能力,于是决定自己搭一个(其实更多是冲着看板娘去的).捣鼓了一个下午之后,终于搞清楚一点门路.就以此记录一点心得吧">
+  <meta name="description" content="前言　　本篇介绍了利用Hexo框架建立博客及部署上线的过程，">
 <meta name="keywords" content="Hexo,安装教程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo框架(一):个人博客的搭建">
+<meta property="og:title" content="Hexo博客系列(一):搭建部署篇">
 <meta property="og:url" content="http:&#x2F;&#x2F;chiayhonl.top&#x2F;archives&#x2F;aedfb7c1.html">
 <meta property="og:site_name" content="MyBlog">
-<meta property="og:description" content="前言　　搭博客需要一个理由.关于为什么要自己搭建一个博客,我想是在看到别人清晰有条理的布局与归类后,为了改善自己归纳整理的能力,于是决定自己搭一个(其实更多是冲着看板娘去的).捣鼓了一个下午之后,终于搞清楚一点门路.就以此记录一点心得吧">
+<meta property="og:description" content="前言　　本篇介绍了利用Hexo框架建立博客及部署上线的过程，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;q102vhzcl.bkt.clouddn.com&#x2F;hexo%E6%90%AD%E5%BB%BA_hexo%E6%96%87%E4%BB%B6%E5%A4%B9%E5%BB%BA%E7%AB%8B.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q102vhzcl.bkt.clouddn.com&#x2F;hexo%E6%90%AD%E5%BB%BA_helloworld.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q102vhzcl.bkt.clouddn.com&#x2F;hexo%E6%90%AD%E5%BB%BA_hexoServer.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q102vhzcl.bkt.clouddn.com&#x2F;hexo%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2_%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.png">
@@ -90,9 +89,9 @@
 <meta property="og:image" content="http:&#x2F;&#x2F;q102vhzcl.bkt.clouddn.com&#x2F;%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_cname%E8%AE%B0%E5%BD%951.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q102vhzcl.bkt.clouddn.com&#x2F;%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q102vhzcl.bkt.clouddn.com&#x2F;%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D2.png">
-<meta property="og:updated_time" content="2019-11-15T08:02:05.887Z">
+<meta property="og:updated_time" content="2019-11-15T13:28:11.338Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;q102vhzcl.bkt.clouddn.com&#x2F;hexo%E6%90%AD%E5%BB%BA_hexo%E6%96%87%E4%BB%B6%E5%A4%B9%E5%BB%BA%E7%AB%8B.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;q102vhzcl.bkt.clouddn.com&#x2F;hexo%E6%90%AD%E5%BB%BA_helloworld.png">
 
 <link rel="canonical" href="http://chiayhonl.top/archives/aedfb7c1.html">
 
@@ -108,7 +107,7 @@
   };
 </script>
 
-  <title>Hexo框架(一):个人博客的搭建 | MyBlog</title>
+  <title>Hexo博客系列(一):搭建部署篇 | MyBlog</title>
   
 
 
@@ -239,7 +238,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo框架(一):个人博客的搭建
+          Hexo博客系列(一):搭建部署篇
         </h1>
 
         <div class="post-meta">
@@ -256,7 +255,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019年11月15日 16:02:05" itemprop="dateModified" datetime="2019-11-15T16:02:05+08:00">2019年11月15日</time>
+                <time title="修改时间：2019年11月15日 21:28:11" itemprop="dateModified" datetime="2019-11-15T21:28:11+08:00">2019年11月15日</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -271,7 +270,7 @@
             </span>
 
           
-            <span id="/archives/aedfb7c1.html" class="post-meta-item leancloud_visitors" data-flag-title="Hexo框架(一):个人博客的搭建" title="热度">
+            <span id="/archives/aedfb7c1.html" class="post-meta-item leancloud_visitors" data-flag-title="Hexo博客系列(一):搭建部署篇" title="热度">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -279,6 +278,20 @@
               <span class="leancloud-visitors-count"></span>
               <span>℃</span>
             </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/archives/aedfb7c1.html#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/archives/aedfb7c1.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -289,79 +302,113 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　搭博客需要一个理由.关于为什么要自己搭建一个博客,我想是在看到别人清晰有条理的布局与归类后,为了改善自己归纳整理的能力,于是决定自己搭一个(其实更多是冲着看板娘去的).捣鼓了一个下午之后,终于搞清楚一点门路.就以此记录一点心得吧<br><br></p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　本篇介绍了利用Hexo框架建立博客及部署上线的过程，<br><br></p>
 <a id="more"></a>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><p>　　搭建个人博客=域名(外网可访问的地址)+外网服务器(外网存储文件图片的地方)+解析(本地与服务器做映射)</p>
 <p>　　搭建流程大概分为:</p>
 <p>　　1. 下载<span class="exturl" data-url="aHR0cHM6Ly93d3cuZ2l0LXNjbS5jb20vZG93bmxvYWQv" title="https://www.git-scm.com/download/">git<i class="fa fa-external-link"></i></span>,下载<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuL2Rvd25sb2FkL2N1cnJlbnQv" title="https://nodejs.org/en/download/current/">node.js<i class="fa fa-external-link"></i></span>,搭建<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv" title="https://hexo.io/zh-cn/docs/">Hexo<i class="fa fa-external-link"></i></span></p>
 <p>　　2. <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLw==" title="https://github.com/">GitHub<i class="fa fa-external-link"></i></span>仓库注册与部署</p>
-<p>　　3. 域名购买与绑定</p>
-<p>　　4. 域名解析</p>
-<h3 id="环境的下载与安装"><a href="#环境的下载与安装" class="headerlink" title="环境的下载与安装"></a><em>环境的下载与安装</em></h3><p>　　<strong>第一步：首先先下载git和 node.js：</strong><br>　　下载并安装git：<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZC93aW4=" title="https://git-scm.com/download/win">https://git-scm.com/download/win<i class="fa fa-external-link"></i></span><br>　　下载并安装node.js ；<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuL2Rvd25sb2FkL2N1cnJlbnQv" title="https://nodejs.org/en/download/current/">https://nodejs.org/en/download/current/<i class="fa fa-external-link"></i></span>  </p>
-<p>　　具体安装流程这里不再叙述，直接默认安装即可。当上面两个都下载安装完毕后,搭建Hexo框架：  </p>
-<p>　　<strong>第二步：先在E盘(自行选择）中建立一个Hexo文件夹用于存储本地文件</strong>,如下图。有这么多文件是因为我已经搭建好了</p>
-<p>   <img src="http://q102vhzcl.bkt.clouddn.com/hexo%E6%90%AD%E5%BB%BA_hexo%E6%96%87%E4%BB%B6%E5%A4%B9%E5%BB%BA%E7%AB%8B.png" alt="图片加载失败"></p>
-<p>　　<strong>第三步：进入文件夹对着空白处右键，选中Git Bash Here(如果你成功安装Git的话)，依次输入以下命令：</strong></p>
+<p>　　3. 域名购买</p>
+<p>　　4. 部署上线</p>
+<h3 id="环境的下载与安装"><a href="#环境的下载与安装" class="headerlink" title="环境的下载与安装"></a><em>环境的下载与安装</em></h3><p><strong>第一步：首先先下载git和 node.js，具体安装流程不在叙述：</strong><br>　　下载并安装git：<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZC93aW4=" title="https://git-scm.com/download/win">https://git-scm.com/download/win<i class="fa fa-external-link"></i></span><br>　　下载并安装node.js ；<span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL2VuL2Rvd25sb2FkL2N1cnJlbnQv" title="https://nodejs.org/en/download/current/">https://nodejs.org/en/download/current/<i class="fa fa-external-link"></i></span>    </p>
+<p><strong>第二步：先在E盘(自行选择）中建立一个文件夹用于存储本地文件，文件夹名字自己定</strong></p>
+<p><strong>第三步：进入文件夹目录，打开命令行工具，依次输入以下命令：</strong></p>
 <ul>
-<li><p>安装Hexo：<code>npm install -g hexo-cli</code></p>
-</li>
-<li><p>初始化Hexo: <code>hexo init</code></p>
-<p> 此时，指定文件夹的目录大致如下：</p>
-<pre><code>.
-├── _config.yml
-├── package.json
-├── scaffolds
-├── source
-|   ├── _drafts
-|   └── _posts
-└── themes</code></pre></li>
-<li><p>启动Hexo服务: <code>hexo clean</code>(清理静态文件) –&gt;<code>hexo generate</code>(生成静态文件)–&gt;<code>hexo server</code>(部署到本地)</p>
-</li>
+<li>安装Hexo : -g 表示全局安装，会将 Hexo 命令加入环境变量中，以使其在 cmd 下有效。  </li>
 </ul>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>初始化Hexo: </li>
+</ul>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo init</span></span><br></pre></td></tr></table></figure>
+
+<p>　　此时，指定文件夹的目录大致如下：</p>
+<pre><code>.
+  ├── node_modules       //依赖安装目录
+  ├── scaffolds          //模板文件夹，新建的文章将会从此目录下的文件中继承格式
+  |   ├── draft.md         //草稿模板
+  |   ├── page.md          //页面模板
+  |   └── post.md          //文章模板
+  ├── source             //资源文件夹，用于放置图片、数据、文章等资源
+  |   └── _posts           //文章目录
+  ├── themes             //主题文件夹
+  |   └── landscape        //默认主题
+  ├── .gitignore         //指定不纳入git版本控制的文件
+  ├── _config.yml        //站点配置文件
+  ├── db.json            
+  ├── package.json
+  └── package-lock.json</code></pre><ul>
+<li>启动Hexo服务: 部署到本地</li>
+</ul>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp; hexo <span class="keyword">generate</span> &amp;  hexo server</span><br></pre></td></tr></table></figure>
+
 <p>　　执行以上命令之后，hexo就会在public文件夹生成相关html文件，如下图</p>
 <p>   <img src="http://q102vhzcl.bkt.clouddn.com/hexo%E6%90%AD%E5%BB%BA_helloworld.png" alt="图片加载失败"></p>
-<p>　　<strong>第四步：输入hexo server后，如果成功，则可访问 <span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw" title="http://localhost:4000">http://localhost:4000<i class="fa fa-external-link"></i></span> 查看这个页面。在控制台按Ctrl+C可退出预览</strong></p>
+<p><strong>第四步：访问 <span class="exturl" data-url="aHR0cDovL2xvY2FsaG9zdDo0MDAw" title="http://localhost:4000">http://localhost:4000<i class="fa fa-external-link"></i></span> 查看这个页面。在命令行窗口按Ctrl+C可退出</strong></p>
 <p>   <img src="http://q102vhzcl.bkt.clouddn.com/hexo%E6%90%AD%E5%BB%BA_hexoServer.png" alt="图片加载失败"></p>
-<p>　　至此基本环境已近安装完毕,更多详细内容可参考<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv" title="https://hexo.io/zh-cn/docs/">官方文档<i class="fa fa-external-link"></i></span>  </p>
-<h3 id="服务器的部署"><a href="#服务器的部署" class="headerlink" title="服务器的部署"></a><em>服务器的部署</em></h3><p>　　想要稳定地运行网站(博客)，需要购买一个自己的服务器。但里我们使用GitHub仓库(当然是因为免费啦)，相当于借用了GitHub的服务器。</p>
-<p>　　服务器部署大致如下：</p>
-<p>　　<strong>第一步：注册/登录github： <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLw==" title="https://github.com/">https://github.com/<i class="fa fa-external-link"></i></span></strong> (不会就问问度娘吧~)</p>
-<p>　　<strong>第二步：初始化仓库：新建(New)一个仓库。新建仓库名字为：用户名 + .github.io。</strong></p>
-<p>   <img src="http://q102vhzcl.bkt.clouddn.com/hexo%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2_%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="图片加载失败"></p>
-<p>　　<strong>第三步：新建完成后，选择第一个(六行命令那个)复制</strong></p>
-<p>   <img src="http://q102vhzcl.bkt.clouddn.com/hexo%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA_github%E4%BB%93%E5%BA%93%E5%BB%BA%E7%AB%8B.png" alt="图片加载失败"></p>
-<p>　　<strong>第四步：然后在刚才建的Hexo文件夹打开Git Bash命令窗口进行粘贴。</strong></p>
-<p>   <img src="http://q102vhzcl.bkt.clouddn.com/hexo%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2_git%E5%88%9D%E5%A7%8B%E5%8C%96%E5%91%BD%E4%BB%A4.png" alt="图片加载失败"></p>
-<p>　　<strong>第五步：在hexo文件夹下打开并配置_config.yml中有关deploy的部分，修改如下,注意将<code>name</code>改为你的用户名</strong></p>
-<pre><code>deploy:
-  type: git
-  repository: https://github.com/name/name.github.io.git
-  branch: master</code></pre><p>　　<strong>第六步：然后在hexo文件夹打开git bash窗口，输入<code>hexo deploy</code>就会将本次有改动的代码全部提交，这时刷新你的GitHub页面即可看到已提交的文件</strong></p>
-<p>　　PS:上传前建议配置一个<span class="exturl" data-url="aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vZW4vZ2l0aHViL2F1dGhlbnRpY2F0aW5nLXRvLWdpdGh1Yi9jb25uZWN0aW5nLXRvLWdpdGh1Yi13aXRoLXNzaA==" title="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">SHH key<i class="fa fa-external-link"></i></span>,上传时不用输入账号密码还能防止别人攻击。当然之后配置也可以。  </p>
-<h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a><em>购买域名</em></h3><p>　　当环境和服务器的基本环境都已搞定后，就需要去购买一个域名，以便使博客能够通过互联网被访问。</p>
+<p>　　详细内容请参考<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuL2RvY3Mv" title="https://hexo.io/zh-cn/docs/">官方文档<i class="fa fa-external-link"></i></span>  </p>
+<br>
+
+<h3 id="服务器的部署"><a href="#服务器的部署" class="headerlink" title="服务器的部署"></a><em>服务器的部署</em></h3><p>　　要稳定地运行博客，则需自行购买服务器。个人要求不高，可借用GitHub的服务器。</p>
+<p><strong>第一步：注册/登录github： <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLw==" title="https://github.com/">https://github.com/<i class="fa fa-external-link"></i></span></strong> </p>
+<p>　　PS:注册后建议配置一个<span class="exturl" data-url="aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vZW4vZ2l0aHViL2F1dGhlbnRpY2F0aW5nLXRvLWdpdGh1Yi9jb25uZWN0aW5nLXRvLWdpdGh1Yi13aXRoLXNzaA==" title="https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh">SHH key<i class="fa fa-external-link"></i></span></p>
+<p><strong>第二步：初始化仓库：新建(New)一个仓库。新建仓库名字为：用户名 + .github.io。</strong></p>
+<p><img src="http://q102vhzcl.bkt.clouddn.com/hexo%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2_%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="图片加载失败"></p>
+<p><strong>第三步：仓库新建完成后，复制第一个命令块</strong></p>
+<p><img src="http://q102vhzcl.bkt.clouddn.com/hexo%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA_github%E4%BB%93%E5%BA%93%E5%BB%BA%E7%AB%8B.png" alt="图片加载失败"></p>
+<p><strong>第四步：在博客文件夹目录打开Git Bash命令窗口进行粘贴。</strong></p>
+<p><img src="http://q102vhzcl.bkt.clouddn.com/hexo%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2_git%E5%88%9D%E5%A7%8B%E5%8C%96%E5%91%BD%E4%BB%A4.png" alt="图片加载失败"></p>
+<p><strong>第五步：打开并配置_config.yml中有关deploy的部分，修改如下,注意将<code>name</code>改为你的用户名</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">https://github.com/name/name.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+
+<p><strong>第六步：在hexo文件夹打开git bash窗口，输入以下命令将代码全部提交到github</strong></p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo deploy</span></span><br></pre></td></tr></table></figure>
+
+<br>
+
+<h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a><em>购买域名</em></h3><p>　　本地环境和服务器的配置好后，需要购买一个域名，以便使博客能够通过互联网被访问。</p>
 <p>　　去阿里云购买一个域名 <span class="exturl" data-url="aHR0cDovL3d3dy5hbGl5dW4uY29t" title="http://www.aliyun.com">www.aliyun.com<i class="fa fa-external-link"></i></span> (其他类似腾讯云等等也行)，根据自己经济能力选择域名购买即可</p>
 <p>　　<img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0.png" alt="图片加载失败"></p>
 <p>　　购买后还要进行一系列的实名验证和备案等操作这里就不在展示了，各位根据购买网站指示自行完成即可</p>
-<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a><em>域名解析</em></h3><p>　　<strong>第一步：在购买成功进行备案后。找到域名控制台进行域名解析(以阿里云为例)</strong></p>
+<br>
+
+<h3 id="部署上线"><a href="#部署上线" class="headerlink" title="部署上线"></a><em>部署上线</em></h3><p><strong>第一步：在购买成功后。找到域名控制台进行域名解析(以阿里云为例)</strong></p>
 <p>   <img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png" alt="图片加载失败"></p>
-<p>　　<strong>第二步： 进行新手引导</strong></p>
+<p><strong>第二步： 进行新手引导</strong></p>
 <p>   <img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%901.png" alt="图片加载失败"></p>
 <p>   <img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%902.png" alt="图片加载失败"></p>
-<p>　　<strong>第三步：网站解析设置完后，修改记录值</strong></p>
+<p><strong>第三步：网站解析设置完后，修改记录值</strong></p>
 <p>   <img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%903.png" alt="图片加载失败"></p>
-<p>　　<strong>第四步；修改完可以打开命令行窗口进行ping操作，查看是否能与服务器通信</strong></p>
+<p><strong>第四步；打开命令行窗口进行ping操作，查看是否能与服务器通信</strong></p>
 <p>   <img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_ping.png" alt="图片加载失败"></p>
-   <br>
+<br>
 
 <p>　　此外还有两个地方要修改：</p>
-<p>　　A、 source文件的CNAME记录：</p>
+<p>A、 source文件的CNAME记录：</p>
 <p>　　创建方式:右键新建txt文本-&gt;输入你购买的域名 <span class="exturl" data-url="aHR0cDovL3d3dy5jaGlheWhvbmwudG9w" title="http://www.chiayhonl.top">www.chiayhonl.top<i class="fa fa-external-link"></i></span> -&gt; 保存关闭 -&gt; 去掉.txt后缀</p>
-<p>   <img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_cname%E8%AE%B0%E5%BD%951.png" alt="图片加载失败"></p>
-<p>　　B、 服务器绑定域名：</p>
-<p>　　找到仓库的setting页面，拉倒最下面</p>
+<p><img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_cname%E8%AE%B0%E5%BD%951.png" alt="图片加载失败"></p>
+<p>B、 服务器绑定域名：</p>
+<p>　　找到仓库的setting页面</p>
 <p>   <img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.png" alt="图片加载失败"></p>
+<p>　　拉倒最下面</p>
 <p>   <img src="http://q102vhzcl.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90_%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D2.png" alt="图片加载失败"></p>
 <p>　　到这博客基本框架已搭建完毕,输入自己购买的域名如： <span class="exturl" data-url="aHR0cDovL3d3dy5jaGlheWhvbmwudG9w" title="http://www.chiayhonl.top">www.chiayhonl.top<i class="fa fa-external-link"></i></span> 便会显示出自己博客的首页。</p>
+<h2 id="相关问题"><a href="#相关问题" class="headerlink" title="相关问题"></a>相关问题</h2><ul>
+<li><strong>4000 端口已被其他应用占用</strong><br>解决方式：添加 <code>-p</code>/<code>--port</code> 参数来设置 Web 服务监听的端口号，如 <code>hexo s -p 8000</code></li>
+</ul>
+<br>
+
+
+
+
+
+
+
+
+
+
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
@@ -377,7 +424,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://chiayhonl.top/archives/aedfb7c1.html" title="Hexo框架(一):个人博客的搭建">http://chiayhonl.top/archives/aedfb7c1.html</a>
+    <a href="http://chiayhonl.top/archives/aedfb7c1.html" title="Hexo博客系列(一):搭建部署篇">http://chiayhonl.top/archives/aedfb7c1.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -401,8 +448,8 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/archives/92d97ddb.html" rel="prev" title="Hexo框架(二)：博客主题的美化">
-                  Hexo框架(二)：博客主题的美化 <i class="fa fa-chevron-right"></i>
+                <a href="/archives/92d97ddb.html" rel="prev" title="Hexo博客系列(二)：主题美化篇">
+                  Hexo博客系列(二)：主题美化篇 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -418,6 +465,7 @@
 
           </div>
           
+    <div class="comments" id="comments"></div>
 
         </div>
           
@@ -442,7 +490,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建流程"><span class="nav-number">2.</span> <span class="nav-text">搭建流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境的下载与安装"><span class="nav-number">2.1.</span> <span class="nav-text">环境的下载与安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器的部署"><span class="nav-number">2.2.</span> <span class="nav-text">服务器的部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#购买域名"><span class="nav-number">2.3.</span> <span class="nav-text">购买域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#域名解析"><span class="nav-number">2.4.</span> <span class="nav-text">域名解析</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建流程"><span class="nav-number">2.</span> <span class="nav-text">搭建流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境的下载与安装"><span class="nav-number">2.1.</span> <span class="nav-text">环境的下载与安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器的部署"><span class="nav-number">2.2.</span> <span class="nav-text">服务器的部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#购买域名"><span class="nav-number">2.3.</span> <span class="nav-text">购买域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署上线"><span class="nav-number">2.4.</span> <span class="nav-text">部署上线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关问题"><span class="nav-number">3.</span> <span class="nav-text">相关问题</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -517,7 +565,7 @@
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly9tdXNlLnRoZW1lLW5leHQub3Jn">NexT.Muse</span> v7.5.0
+  <div class="theme-info">主题 – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.5.0
   </div>-->
 
         
@@ -527,96 +575,6 @@
 
 
 
-  <script>
-  function leancloudSelector(url) {
-    return document.getElementById(url).querySelector('.leancloud-visitors-count');
-  }
-  if (CONFIG.page.isPost) {
-    function addCount(Counter) {
-      var visitors = document.querySelector('.leancloud_visitors');
-      var url = visitors.getAttribute('id').trim();
-      var title = visitors.getAttribute('data-flag-title').trim();
-
-      Counter('get', `/classes/Counter?where=${JSON.stringify({ url })}`)
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length > 0) {
-            var counter = results[0];
-              leancloudSelector(url).innerText = counter.time + 1;
-            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
-              .then(response => response.json())
-              .catch(error => {
-                console.log('Failed to save visitor count', error);
-              })
-          } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .catch(error => {
-          console.log('LeanCloud Counter Error', error);
-        });
-    }
-  } else {
-    function showTime(Counter) {
-      var visitors = document.querySelectorAll('.leancloud_visitors');
-      var entries = [...visitors].map(element => {
-        return element.getAttribute('id').trim();
-      });
-
-      Counter('get', `/classes/Counter?where=${JSON.stringify({ url: { '$in': entries } })}`)
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length === 0) {
-            document.querySelectorAll('.leancloud_visitors .leancloud-visitors-count').forEach(element => {
-              element.innerText = 0;
-            });
-            return;
-          }
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            leancloudSelector(url).innerText = time;
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = leancloudSelector(url);
-            if (element.innerText == '') {
-              element.innerText = 0;
-            }
-          }
-        })
-        .catch(error => {
-          console.log('LeanCloud Counter Error', error);
-        });
-    }
-  }
-
-  fetch('https://app-router.leancloud.cn/2/route?appId=BLBjME7lh2sL2tElHibFHScr-gzGzoHsz')
-    .then(response => response.json())
-    .then(({ api_server }) => {
-      var Counter = (method, url, data) => {
-        return fetch(`https://${api_server}/1.1${url}`, {
-          method: method,
-          headers: {
-            'X-LC-Id': 'BLBjME7lh2sL2tElHibFHScr-gzGzoHsz',
-            'X-LC-Key': 'z5EemiRCsFdICXaTnBkXHYbn',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      if (CONFIG.page.isPost) {
-        const localhost = /http:\/\/(localhost|127.0.0.1|0.0.0.0)/;
-        if (localhost.test(document.URL)) return;
-        addCount(Counter);
-      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
 
 
 
@@ -635,7 +593,7 @@
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 <script src="/js/next-boot.js"></script>
 
 
@@ -660,6 +618,42 @@
   
 
   
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unjkp.com/valine/dist/Valine.min.js"></script>  //删除Valine核心代码库外链调用
+  <script src="/js/src/Valine.min.js"></script>  //调用刚下载的本地文件以加速加载速度
+
+    //这里改为从本地加载
+  
+  <script src="/js/src/Valine.min.js"></script>
+
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'BLBjME7lh2sL2tElHibFHScr-gzGzoHsz',
+        appKey: 'z5EemiRCsFdICXaTnBkXHYbn',
+        placeholder: 'ヾﾉ≧∀≦)o小美女小帅哥~快来玩鸭!',
+        avatar:'hide',
+        guest_info:['nick'] ,  //评论者只需要提供评论的昵称即可
+        pageSize:'10' || 10,
+    });
+    //增加以下六行代码去除 power by valine
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
+  </script>
+
 
 
   <!-- 页面点击小红心 -->
