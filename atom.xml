@@ -68,20 +68,17 @@
   </entry>
   
   <entry>
-    <title>读书笔记——《高性能MySQL》</title>
+    <title>读书笔记——《高性能MySQL》(更新中)</title>
     <link href="http://chiayhonl.top/archives/8dd2f4b9.html"/>
     <id>http://chiayhonl.top/archives/8dd2f4b9.html</id>
     <published>2019-11-12T05:10:31.000Z</published>
-    <updated>2019-11-15T06:24:39.951Z</updated>
+    <updated>2019-11-17T15:26:51.540Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　高性能MySQL读书笔记，记录所思所想。<br><br></p><a id="more"></a><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>　　本书主要是从以下几个方面进行概述的：</p><ul><li>MySQL架构及并发控制简介</li><li>MySQL基础：表、索引、数据、查询等</li><li>MySQL特性：复制、可扩展等</li><li>MySQL优化：服务器优化、操作系统与硬件优化、应用层优化等</li><li>MySQL相关工具介绍</li></ul><h2 id="MySQL架构及并发控制简介"><a href="#MySQL架构及并发控制简介" class="headerlink" title="MySQL架构及并发控制简介"></a>MySQL架构及并发控制简介</h2><p><img src="http://q14dyacdm.bkt.clouddn.com/1-MySQL%E6%9E%B6%E6%9E%84_%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg" alt="架构图"></p><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/spoiler.css&quot; type=&quot;text/css&quot;&gt;&lt;script src=&quot;/js/spoiler.js&quot; type=&quot;text/javascript&quot; async&gt;&lt;/script&gt;
-      
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;　　高性能MySQL读书笔记，记录所思所想。&lt;br&gt;&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
